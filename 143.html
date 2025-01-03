@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="143/proposal.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">            
+<link rel="stylesheet" href="143.css">
+<title>Proposal &hearts;</title>
+</head>
+<body>
+	<div class="Name" id="Name">
+		<h1>How would you like to be addressed?</h1>
+		<img src="143/143_6.webp" alt="">
+		<input placeholder="Nick name" id="login_name">
+		<button type="button" onclick="to_proposal()">Ok</button>
+	</div>
+	
+	<div class="Love" id="Love">
+		<h1><span id="Love_name"></span>, Will you be my Princess &hearts;</h1>
+		<img src="143/143_4.png" alt="">
+		<div class="Love_options">
+			<button type="button" class="yes" id="yes" onclick="open_yes_result()">Yes</button>
+			<div class="no_funny"  onmouseover="No_move(this)">
+				<div id="funny_msg"></div>
+				<button type="button" class="no" id="no" onclick="open_no_result()">No</button>
+			</div>
+		</div>
+	</div>
+	<div class="Yes_Result" id="Yes_Result">
+		<h1>Thank you &#129303;</h1>
+		<h1>Wait for your present Ammu &hearts; !!</h1>
+		<img src="143/143_1.png" alt="">
+	</div>
+	<div class="No_Result" id="No_Result">
+		<h1>Manasatchiye illa la, Be happy :(</h1>
+		<img src="143/143_2.webp" alt="">
+		<button type="button" onclick="back_home()">Wanna reconsider? :)</button>
+	</div>
+	<script src="143.js"></script>
+</body>
+</html>
